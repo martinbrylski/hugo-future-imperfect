@@ -1,0 +1,20 @@
+{
+    "lang": {
+        "next_page": "Nächste Seite",
+        "prev_page": "Vorherige Seite",
+        "search": "Suchen",
+        "menu": "Menü",
+        "recent_posts": "Letzte Artikel",
+        "share_this_post": "Teile diesen Artikel",
+        "view_more_posts": "Zeige noch mehr Artikel",
+        "categories": "Kategorien",
+        "about": "Über",
+        "learn_more": "Lerne mehr",
+        "share": "Teilen",
+        "date_long": "02.01.2006",
+        "date_short": "02.01.2006",
+        "continue_reading": "Weiterlesen",
+        "read_in_n_minutes": "Lies das in ",
+        "minutes": " Minuten"
+    }
+}

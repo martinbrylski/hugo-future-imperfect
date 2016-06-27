@@ -5,7 +5,7 @@
 
     <footer>
         <ul class="actions">
-            <li><a href="{{ .Permalink }}" class="button big">Continue Reading</a></li>
+            <li><a href="{{ .Permalink }}" class="button big">{{ $.Site.Data.i18n.lang.continue_reading }}</a></li>
         </ul>
         {{ .Render "footer-category" }}
     </footer>

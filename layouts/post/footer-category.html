@@ -28,7 +28,7 @@
                     {{ $.Scratch.Set "categoryUrl" "/categories/" }}
 
                     {{ if gt $categoryCount 1 }}
-                        Categories
+                        {{ $.Site.Data.i18n.lang.categories }}
                     {{ else }}
                         Category
                     {{ end }}

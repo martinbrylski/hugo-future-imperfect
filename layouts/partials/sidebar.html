@@ -34,7 +34,7 @@
         <section id="recent-posts">
             <ul class="posts">
                 <header>
-                    <h3>Recent Posts</h3>
+                    <h3>{{ $.Site.Data.i18n.lang.recent_posts }}</h3>
                 </header>
                 {{ if .Site.Params.orderByPublishDate }}
                     {{ $.Scratch.Set "recentPosts" .Site.Pages.ByPublishDate.Reverse }}
@@ -59,8 +59,8 @@
                                     {{ $.Scratch.Set "dateType" .Date }}
                                 {{ end }}
                                 <time class="published" datetime=
-                                    '{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                                    {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}</time>
+                                    '{{ ($.Scratch.Get "dateType").Format $.Site.Data.i18n.lang.date_short }}'>
+                                    {{ ($.Scratch.Get "dateType").Format $.Site.Data.i18n.lang.date_long }}</time>
                             </header>
                         </article>
                     </li>
@@ -75,7 +75,7 @@
                             {{ else }}
                                 "/post/"
                             {{ end }}
-                            class="button">View more posts</a></li>
+                            class="button">{{ $.Site.Data.i18n.lang.view_more_posts }}</a></li>
                         </ul>
                     </li>
                 {{ end }}
@@ -89,7 +89,7 @@
         <section id="categories">
             <ul class="posts">
                 <header>
-                    <h3><a href="/categories/">Categories</a></h3>
+                    <h3><a href="/categories/">{{ $.Site.Data.i18n.lang.categories }}</a></h3>
                 </header>
 
                 {{ if .Site.Params.categoriesByCount }}
@@ -115,11 +115,11 @@
     <!-- About -->
         {{ with .Site.Params.intro.about }}
         <section class="blurb">
-            <h2>About</h2>
+            <h2>{{ $.Site.Data.i18n.lang.about }}</h2>
             <p>{{ . }}</p>
 
             <ul class="actions">
-                <li><a href="/about/" class="button">Learn More</a></li>
+                <li><a href="/about/" class="button">{{ $.Site.Data.i18n.lang.learn_more }}</a></li>
             </ul>
         </section>
         {{ end }}
